@@ -7,6 +7,9 @@
   "scripts": {
     "test": "yarn test"
   },
+  "bin": {
+    "atomic-creator": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zaferatli/atomic-creator.git"
