@@ -1,0 +1,20 @@
+import React, { FunctionComponent } from 'react';
+import { Text, View } from 'react-native';
+import { {{nameUpperCase}}DefaultPropsType } from './default';
+import { {{nameLowerCase}}Style } from './style';
+import { {{nameUpperCase}}PropsType } from './type';
+
+/**
+ * {{nameUpperCase}} bileşeni, bla bla lba
+ * Lorem ipsum bla bla...
+ */
+export const {{nameUpperCase}}: FunctionComponent<{{nameUpperCase}}PropsType> = (inProps) => {
+  const props = inProps as {{nameUpperCase}}DefaultPropsType;
+
+  return (
+    <View
+      style={[props.style]} >
+      <Text>{{nameUpperCase}}</Text>
+    </View>
+  );
+};

@@ -1,0 +1,21 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+
+import { {{nameUpperCase}} } from '../component';
+import { {{nameUpperCase}}PropsType } from '../type';
+
+const getComponent = (props: {{nameUpperCase}}PropsType) => {
+  return <{{nameUpperCase}} {...props} />;
+};
+
+it('render {{nameUpperCase}}', () => {
+  renderer.create(getComponent({ text: '{{nameUpperCase}}-test' }));
+});
+
+it('Basic {{nameUpperCase}}', () => {
+  const props: {{nameUpperCase}}PropsType = {
+    //
+  };
+  const RenderedComponent = renderer.create(getComponent(props)).toJSON();
+  expect(RenderedComponent).toMatchSnapshot();
+});
