@@ -36,8 +36,7 @@ if (isCreateAction) {
 }
 
 const createFile = async (fileType) => {
-  const folderPath =
-    __dirname + "/src/components/" + fileType + "s" + "/" + fileName;
+  const folderPath = "./src/components/" + fileType + "s" + "/" + fileName;
 
   if (!fs.existsSync(folderPath)) {
     fs.mkdirSync(folderPath);
