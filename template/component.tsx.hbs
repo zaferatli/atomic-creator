@@ -8,12 +8,13 @@ import { {{nameUpperCase}}PropsType } from './type';
  * {{nameUpperCase}} bileşeni, bla bla lba
  * Lorem ipsum bla bla...
  */
+
 export const {{nameUpperCase}}: FunctionComponent<{{nameUpperCase}}PropsType> = (inProps) => {
   const props = inProps as {{nameUpperCase}}DefaultPropsType;
 
   return (
     <View
-      style={[props.style]} >
+      style={[{{nameLowerCase}}Style.container, props.style]} {...generateTestId(`${props.testID}_{{nameUpperCase}}`)}>
       <Text>{{nameUpperCase}}</Text>
     </View>
   );

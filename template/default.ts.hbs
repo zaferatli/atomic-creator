@@ -4,5 +4,6 @@ export type {{nameUpperCase}}DefaultPropsType = {{nameUpperCase}}PropsType &
   Required<Pick<{{nameUpperCase}}PropsType, keyof typeof {{nameLowerCase}}DefaultProps>>;
 
 export const {{nameLowerCase}}DefaultProps: {{nameUpperCase}}PropsType = {
-  //
+  testID: "{{nameLowerCase}}",
+  accessibilityLabel: "{{nameLowerCase}}",
 };
